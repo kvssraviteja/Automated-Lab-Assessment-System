@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // WRITE THE VALIDATION SCRIPT IN THE HEAD TAG.
+    function isNumber(evt) {
+        var iKeyCode = (evt.which) ? evt.which : evt.keyCode
+        if (iKeyCode != 46 && iKeyCode > 31 && (iKeyCode < 48 || iKeyCode > 57))
+            return false;
+
+        return true;
+    }    
+</script>
+  <head>
+    <meta charset="utf-8">
+    <title>Automated Lab Assessment System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<a href="http://localhost/SLMS/view_lab2.php">BACK </a>
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #f5f5f5;
+      }
+
+      .form-signin {
+        max-width: 300px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+      .form-signin .form-signin-heading,
+      .form-signin .checkbox {
+        margin-bottom: 10px;
+      }
+      .form-signin input[type="text"],
+      .form-signin input[type="password"] {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }
+
+    </style>
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+  <body>
+
+    <div class="container">
+
+      <form class="form-signin" action="http://localhost/SLMS/update.php" target="_top" method="POST">
+       <center>  <h3 class="form-signin-heading">ADD NEW QUESTION</h3><br>
+        <input type="text" class="input-block-level" name="q_no" placeholder="QUESTION NUMBER" onkeypress="javascript:return isNumber(event)"><br><br>
+        <input type="text" class="input-block-level" name="question" placeholder="QUESTION."><br><br>
+		<input type="text" class="input-block-level" name="a1" placeholder="OPTION 1"><br><br>
+		<input type="text" class="input-block-level" name="a2" placeholder="OPTION 2"><br><br>
+		<input type="text" class="input-block-level" name="a3" placeholder="OPTION 3"><br><br>
+		<input type="text" class="input-block-level" name="a4" placeholder="OPTION 4"><br><br>
+		<input type="text" class="input-block-level" name="correct_answer" placeholder="CORRECT ANSWER" onkeypress="javascript:return isNumber(event)"><br><br>
+		<button class="btn btn-large btn-primary" type="submit" name="add">ADD</button> </center>
+      </form>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
+
+
+<!--<html>
+<head>
+<link rel="stylesheet" type="text/css" href="a.css"/>
+</head>
+<body>
+<center>
+<br>
+<br>
+<form action="update.php" method="post">
+<label>Enter the question number</label>
+<input type="text" name="q_no"><br><br>
+<label>Enter the question</label>
+<input type="text" name="question"><br><br>
+<label>Enter option 1</label>
+<input type="text" name="a1"><br><br>
+<label>Enter option 2</label>
+<input type="text" name="a2"><br><br>
+<label>Enter option 3</label>
+<input type="text" name="a3"><br><br>
+<label>Enter option 4</label>
+<input type="text" name="a4"><br><br>
+<label>Enter the correct option</label>
+<input type="text" name="correct_answer"><br><br>
+<label>Enter the tag value </label>
+<input type="text" name="tag" placeholder="E-easy D-difficult"><br><br>
+<input type="submit" name="add" value="ADD">
+</form>
+</center>
+</body>
+</html>

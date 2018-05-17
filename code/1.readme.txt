@@ -1,0 +1,2 @@
+faculty opening page : faculty_main.html
+student opening page : parallax-template\parallax-template\index.html

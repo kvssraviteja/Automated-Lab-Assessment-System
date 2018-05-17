@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+  <script>
+    // WRITE THE VALIDATION SCRIPT IN THE HEAD TAG.
+    function isNumber(evt) {
+        var iKeyCode = (evt.which) ? evt.which : evt.keyCode
+        if (iKeyCode != 46 && iKeyCode > 31 && (iKeyCode < 48 || iKeyCode > 57))
+            return false;
+
+        return true;
+    }    
+</script>
+    <meta charset="utf-8">
+    <title>Automated Lab Assessment System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #f5f5f5;
+      }
+
+      .form-signin {
+        max-width: 300px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+      .form-signin .form-signin-heading,
+      .form-signin .checkbox {
+        margin-bottom: 10px;
+      }
+      .form-signin input[type="text"],
+      .form-signin input[type="password"] {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }
+
+    </style>
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+  <header><a href="file:///C:/wamp64/www/SLMS/parallax-template/parallax-template/index.html">GO BACK </a></header><br><br><br>
+  <body>
+
+    <div class="container">
+
+      <form class="form-signin" action="http://localhost/SLMS/student_register.php" target="_top" method="POST">
+       <center>  <h2 class="form-signin-heading">REGISTER</h2><br>
+        <input type="text" class="input-block-level" name="s_name" placeholder="STUDENT NAME"><br><br>
+		 <input type="text" class="input-block-level" name="regd_no" placeholder="REGISTRATION NO."><br><br>
+		 <input type="text" class="input-block-level" name="sys_no" placeholder="SYSTEM NO." onkeypress=\"javascript:return isNumber(event)\"><br><br>
+		  <input type="text" class="input-block-level" name="lab_id" placeholder="LAB ID"><br><br>
+       <button class="btn btn-large btn-primary" type="submit" name="s_register">REGISTER</button> </center>
+      </form>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
+
+
+<!--<html>
+<head>
+<title>Automated Lab Monitoring System </title>
+<h2>LOGIN HERE!! </h2>
+<link rel="stylesheet" type="text/css" href="a.css"/>
+</head>
+<br>
+<br>
+<body>
+<form action="http://localhost/SLMS/faculty_login.php" target="_top" method="POST">
+<label>Enter your ID: </label>
+<input type="text" name="faculty_id" /><br>
+<label> Enter your password: </label>
+<input type="password" name="faculty_pwd" /> <br>
+<input type="submit" name="f_login" value="LOGIN"/>
+</html>" target="_top" method="POST">
+       <center>  <h2 class="form-signin-heading">REGISTER</h2><br>
+        <input type="text" class="input-block-level" name="faculty_id" placeholder="Faculty ID"><br><br>
+        <input type="password" class="input-block-level" name="faculty_pwd" placeholder="Password"><br><br>
+       <button class="btn btn-large btn-primary" type="submit" name="f_login">LOGIN</button> </center>
+      </form>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
+
+
+<!--<html>
+<head>
+<title>Automated Lab Monitoring System </title>
+<h2>LOGIN HERE!! </h2>
+<link rel="stylesheet" type="text/css" href="a.css"/>
+</head>
+<br>
+<br>
+<body>
+<form action="http://localhost/SLMS/faculty_login.php" target="_top" method="POST">
+<label>Enter your ID: </label>
+<input type="text" name="faculty_id" /><br>
+<label> Enter your password: </label>
+<input type="password" name="faculty_pwd" /> <br>
+<input type="submit" name="f_login" value="LOGIN"/>
+</html><!--
+<html>
+<head>
+<title>Automated Lab Monitoring System </title>
+<h1>AUTOMATED LAB MONITORING SYSTEM </h1>
+<h2>REGISTER HERE!! </h2>
+<link rel="stylesheet" type="text/css" href="a.css"/>
+</head>
+<br>
+<br>
+<body>
+<form action="http://localhost/SLMS/student_register.php" method="POST">
+<label> Enter your name :</label>
+<input type="text" name="s_name" ><br> 
+<label> Enter your Registered No.: </label> 
+<input type="text" name="regd_no"><br> 
+<label>Enter your system no. :</label>
+<input type="text" name="sys_no" > <br>
+<label> Enter the lab ID : </label>
+<input type="text" name="lab_id"><br></p>
+<input type="submit" name="s_register"> <br>
+</form>
+</body>
+</html>
